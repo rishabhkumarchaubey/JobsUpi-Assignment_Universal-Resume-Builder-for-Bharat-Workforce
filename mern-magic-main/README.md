@@ -1,8 +1,21 @@
-# Welcome to Universal Resume Builder
+# Universal Resume Builder
 
-## Project info
+A lightweight React + Vite app to create clean, professional resumes for the Bharat workforce.
 
-**URL**: <YOUR_DEPLOYMENT_URL>
+## 🚀 Quick start
+
+### Prerequisites
+- Node.js 18+ (LTS recommended)
+- npm (comes with Node.js)
+
+### Local setup
+```bash
+git clone <YOUR_GIT_URL>
+cd <YOUR_PROJECT_NAME>
+npm install
+npm run dev
+```
+Open http://localhost:8080/ in your browser.
 
 ## How can I edit this code?
 
@@ -10,16 +23,7 @@ There are several ways of editing your application.
 
 **Run locally**
 
-Clone the repository, install dependencies, and start the dev server:
-
-```sh
-git clone <YOUR_GIT_URL>
-cd <YOUR_PROJECT_NAME>
-npm install
-npm run dev
-```
-
-Changes are committed via the usual Git workflow.
+Use the steps in **Quick start** above to run the project locally. Changes are committed via the usual Git workflow.
 
 **Use your preferred IDE**
 
@@ -57,9 +61,8 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
-
-This project is built with:
+## 🧰 Tech stack
+This project uses:
 
 - Vite
 - TypeScript
@@ -67,12 +70,61 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+---
 
-Deploy to any static host such as Vercel, Netlify, or GitHub Pages. For example, on Vercel import the repository and use the default settings — the project builds with `npm run build`.
+## 📦 Scripts & build
+- `npm run dev` — start the Vite dev server
+- `npm run build` — create a production build in `dist/`
+- `npm run build:dev` — build in development mode
+- `npm run preview` — preview the production build locally
+- `npm run lint` — run ESLint
 
-**Cleanup:** If you've removed Lovable-related tooling, run `npm uninstall lovable-tagger` to remove it from `package.json` and `package-lock.json`, then run `npm install` to ensure `node_modules` match the lockfile.
+---
 
-## Can I connect a custom domain to my project?
+## 📦 Deployment
+Deploy to any static host such as Vercel, Netlify, or GitHub Pages.
+Example (Vercel):
+- Import the repository into Vercel
+- Set the build command to `npm run build`
+- Build output directory: `dist/`
 
-Yes — follow your hosting provider's documentation (Vercel, Netlify, GitHub Pages) to connect a custom domain to your site. See your provider's docs for details.
+---
+
+## 🧹 Cleanup
+If you removed Lovable tooling, run:
+```bash
+npm uninstall lovable-tagger
+npm install
+```
+Optionally update Browserslist data:
+```bash
+npx update-browserslist-db@latest
+```
+If you see dependency issues, remove `node_modules` and `package-lock.json` and reinstall:
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+---
+
+## ✍️ Metadata & assets
+- Update `index.html` to customize title, description, and OG/Twitter meta tags.
+- Add `public/og-image.png` for social previews and point meta tags to `/og-image.png`.
+
+---
+
+## 🤝 Contributing
+- Fork the repo, make your changes, and open a Pull Request.
+- Use clear commit messages, e.g., `git commit -m "docs: update README"`.
+
+---
+
+## ❓ Troubleshooting
+If the dev server fails after dependency changes, try:
+```bash
+rm -rf node_modules package-lock.json
+npm install
+```
+
+If you'd like, I can add a `CONTRIBUTING.md` or open a PR for these README changes.
