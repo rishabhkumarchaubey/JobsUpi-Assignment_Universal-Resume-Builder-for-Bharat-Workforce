@@ -1,22 +1,29 @@
-# Welcome to your Lovable project
+# Welcome to Universal Resume Builder
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+**URL**: <YOUR_DEPLOYMENT_URL>
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
+**Run locally**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Clone the repository, install dependencies, and start the dev server:
 
-Changes made via Lovable will be committed automatically to this repo.
+```sh
+git clone <YOUR_GIT_URL>
+cd <YOUR_PROJECT_NAME>
+npm install
+npm run dev
+```
+
+Changes are committed via the usual Git workflow.
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will be reflected in the repository.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -62,12 +69,10 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Deploy to any static host such as Vercel, Netlify, or GitHub Pages. For example, on Vercel import the repository and use the default settings — the project builds with `npm run build`.
 
-## Can I connect a custom domain to my Lovable project?
+**Cleanup:** If you've removed Lovable-related tooling, run `npm uninstall lovable-tagger` to remove it from `package.json` and `package-lock.json`, then run `npm install` to ensure `node_modules` match the lockfile.
 
-Yes, you can!
+## Can I connect a custom domain to my project?
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Yes — follow your hosting provider's documentation (Vercel, Netlify, GitHub Pages) to connect a custom domain to your site. See your provider's docs for details.
